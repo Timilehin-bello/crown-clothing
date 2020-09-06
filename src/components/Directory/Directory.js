@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import MenuItem from '../MenuItem/MenuItem';
-import { sections } from './sections';
 import './Directory.scss';
+import SECTIONS from './SECTIONS';
 
 class Directory extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     
         this.state = {
-             sections: sections
+             sections: SECTIONS
         }
     }
-    
+     
     render() {
         return (
             <div className="directory-menu">
